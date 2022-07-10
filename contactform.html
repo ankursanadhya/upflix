@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>UpFlix</title>
+</head>
+
+<body>
+    <table border="0" align="center" width="100%">
+        <tr align="center">
+            <td bgcolor="black">
+                <h1 style="color:red">UpFlix</h1>
+            </td>
+            <!-- <img src="assets/images/main.jpeg" alt="" width="100%" height="250"> -->
+        </tr>
+
+        <!-- header bar part start here -->
+        <tr>
+            <td bgcolor="white">
+                <table border="0" width="100%">
+                    <tr align="center   ">
+                        <td><a href="index.html" style="text-decoration: none;"
+                                style="color:rgb(253, 252, 252);">Home</a></td>
+                        <td><a href="action.html" style="text-decoration: none;">Action</a></td>
+                        <td><a href="science.html" style="text-decoration: none;">Science Fiction</a></td>
+                        <td><a href="horror.html" style="text-decoration: none;">Horror</a></td>
+                        <td><a href="adventure.html" style="text-decoration: none;">Adventure</a></td>
+                        <td><a href="funny.html" style="text-decoration: none;">Funny</a></td>
+                        <td><a href="anime.html" style="text-decoration: none;">Anime</a></td>
+                        <td><a href="join.html" style="text-decoration: none;">Join Us</a></td>
+                        <td><a href="contact.html" style="text-decoration: none;">Contact Us</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+        <!-- form start here -->
+
+        <tr style="padding-top: 70px;">
+            <td>
+                <table border="0" width="100%" style="padding-top: 70px;">
+                    <tr>
+                        <td width="25%">
+                            <h3 style="padding-left: 20px;">Sign-Up Form</h3>
+                            <form action="upflix.jsp" method="post" enctype="multipart/form-data">
+                                <fieldset>
+                                    <table border="0" width="100%">
+                                        <tr>
+                                            <td width="25%">Name</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="text" name="Username" placeholder="example: Xavier"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Email-Id</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="email" name="emailid" placeholder="example: abc@xyz.com"
+                                                    size="50" maxlength="20" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Contact No</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="text" name="phone" placeholder="example: +91-7073478188"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Password </td>
+                                            <td width="75%">
+                                                <!--2. Password field : Single line input field with encrypted text-->
+                                                <input type="password" name="Password" placeholder="write your Password"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Confirn Password </td>
+                                            <td width="75%">
+                                                <!--2. Password field : Single line input field with encrypted text-->
+                                                <input type="password" name="cPassword"
+                                                    placeholder="rewrite Password here..." size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Birth date </td>
+                                            <td width="50%">
+                                                <!--3. Date field : Built in date picker-->
+                                                <input type="date" name="Dob" />
+                                                <span>you should be at least 13</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Gender </td>
+                                            <td width="75%">
+                                                <!-- 4. Radio button: Multiple options, single selection -->
+                                                <label><input type="radio" name="Gender" value="Male" />Male</label>
+                                                <label><input type="radio" name="Gender" value="Female" />Female</label>
+                                                <label><input type="radio" name="Gender" value="Other" />Other</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Auto Renewal Subscription</td>
+                                            <td width="75%">
+                                                <!-- 4. Radio button: Multiple options, single selection -->
+                                                <label><input type="radio" name="subs" value="subs" />1 Month</label>
+                                                <label><input type="radio" name="subs" value="subs" />3 month</label>
+                                                <label><input type="radio" name="subs" value="subs" />6 month</label>
+                                            </td>
+                                        </tr>
+                                        <td width="25%"> &nbsp; </td>
+                                        <td width="75%">
+                                            <!--8. Button to submit or reset forms-->
+                                            <input type="submit" name="btnSave" value="Save and proceed to payment" />
+                                            <input type="reset" name="btnClear" value="Cancel Process" />
+
+                                        </td>
+                                    </table>
+                                </fieldset>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+
+        <!-- form end here -->
+
+
+        <!-- copyright part start here -->
+        <tr>
+            <td align="center" height="50" bgcolor="black ">
+                <h3 style="color: red"> All rights reserved By Ankur Sanadhya. &copy; 2022 .</h3>
+
+            </td>
+        </tr>
+
+        <!-- copyright part end herer -->
+    </table>
+
+</body>
+
+</html>

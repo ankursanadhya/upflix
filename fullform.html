@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>UpFlix</title>
+</head>
+
+<body>
+    <table border="0" align="center" width="100%">
+        <tr align="center">
+            <td bgcolor="black">
+                <h1 style="color:red">Full -Form</h1>
+            </td>
+            <!-- <img src="assets/images/main.jpeg" alt="" width="100%" height="250"> -->
+        </tr>
+
+        <!-- header bar part start here -->
+
+
+
+        <!-- form start here -->
+
+        <tr style="padding-top: 70px;">
+            <td>
+                <table border="0" width="100%" style="padding-top: 70px;">
+                    <tr>
+                        <td width="25%">
+                            <form action="upflix.jsp" method="post" enctype="multipart/form-data">
+                                <fieldset>
+                                    <table border="0" width="100%">
+                                        <tr>
+                                            <td width="25%">Name</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="text" name="Username" placeholder="example: Xavier"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Father Name</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="text" name="father" placeholder="example: Mr. Papa"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Mother Name</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="text" name="Mother" placeholder="example: Mrs. Maa"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Email-Id</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="email" name="emailid" placeholder="example: abc@xyz.com"
+                                                    size="50" maxlength="20" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Contact No</td>
+                                            <td width="75%">
+                                                <!--1. Textfield : Single line input field-->
+                                                <input type="tel" name="phone" placeholder="example: +91-7073478188"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Password </td>
+                                            <td width="75%">
+                                                <!--2. Password field : Single line input field with encrypted text-->
+                                                <input type="password" name="Password" placeholder="write your Password"
+                                                    size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Confirn Password </td>
+                                            <td width="75%">
+                                                <!--2. Password field : Single line input field with encrypted text-->
+                                                <input type="password" name="cPassword"
+                                                    placeholder="rewrite Password here..." size="50" maxlength="10" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Birth date </td>
+                                            <td width="50%">
+                                                <!--3. Date field : Built in date picker-->
+                                                <input type="date" name="Dob" size="50" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Birth date </td>
+                                            <td width="50%">
+                                                <!--3. Date field : Built in date picker-->
+                                                <input type="time" name="Dob" size="50" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Birth State</td>
+                                            <td width="75%">
+                                                <!--5. Drop down list : Multiple options, single selection -->
+                                                <select name="BirthState" cols="50">
+                                                    <option>-State-</option>
+                                                    <option>Assam</option>
+                                                    <option>Andra Pradesh</option>
+                                                    <option>Madhya Pradesh</option>
+                                                    <option>Uttar Pradesh</option>
+                                                    <option>Rajasthan</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Gender </td>
+                                            <td width="75%">
+                                                <!-- 4. Radio button: Multiple options, single selection -->
+                                                <label><input type="radio" name="Gender" value="Male" />Male</label>
+                                                <label><input type="radio" name="Gender" value="Female" />Female</label>
+                                                <label><input type="radio" name="Gender" value="Other" />Other</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Food Category </td>
+                                            <td width="75%">
+                                                <!-- 4. Radio button: Multiple options, single selection -->
+                                                <label><input type="radio" name="cat" value="Veg" />Veg</label>
+                                                <label><input type="radio" name="cat" value="NONVEG" />NONVEG</label>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Marriage Status</td>
+                                            <td width="75%">
+                                                <!-- 4. Radio button: Multiple options, single selection -->
+                                                <label><input type="radio" name="status1"
+                                                        value="Married" />Married</label>
+                                                <label><input type="radio" name="status1"
+                                                        value="UnMarried" />UnMarried</label>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Select Your Hobbies </td>
+                                            <td width="75%">
+                                                <!--5. Drop down list : Multiple options, single selection -->
+                                                <select name="ddlBirthState" multiple>
+                                                    <option>-Hobbies-</option>
+                                                    <option>Arts and Painting</option>
+                                                    <option>Singing</option>
+                                                    <option>Dancing</option>
+                                                    <option>Poetries</option>
+                                                    <option>Politics</option>
+                                                    <option>Playing Football</option>
+                                                    <option>Playing Basketball</option>
+                                                    <option>Traveling</option>
+                                                    <option>Skating</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%"> Favourite sport</td>
+                                            <td width="75%">
+                                                <input type="checkbox" name="sport1" value="cricket">cricket<br>
+                                                <input type="checkbox" name="sport2" value="cricket">Volleyball<br>
+                                                <input type="checkbox" name="sport3" value="cricket">Footbal<br>
+                                                <input type="checkbox" name="sport4" value="cricket">Tenis<br> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%"> Favourite color</td>
+                                            <td width="75%">
+                                                <input type="color" name="color" size="50" value="color"><br><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Url to profile</td>
+                                            <td width="75%">
+                                                <input type="url" name="prurl" size="50"
+                                                    value="example: www.abc.com"><br><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Url to social-Media</td>
+                                            <td width="75%">
+                                                <input type="url" name="srurl" size="50"
+                                                    value="example: www.instagram/fb.com"><br><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%"> Favourite Number</td>
+                                            <td width="75%">
+                                                <input type="number" name="numberfav" size="50"
+                                                    value="numberfav"><br><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%"> Search Bar</td>
+                                            <td width="75%">
+                                                <input type="search" name="srchbar">
+                                                <input type="submit" value="search">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Login Time</td>
+                                            <td width="75%">
+                                                <input type="datetime-local" size="50" name="meetingdate"> <br><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Login Month</td>
+                                            <td width="75%">
+                                                <input type="month" size="50" name="meetingdate"> <br><br>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="25%" valign="top">Decribe yourself in 20 words </td>
+                                            <td width="75%">
+                                                <!--7. Textarea : Multi line input field-->
+                                                <textarea name="taDescription" cols="50" maxlength="20"
+                                                    rows="5"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%" valign="top">Why we consider you</td>
+                                            <td width="75%">
+                                                <!--7. Textarea : Multi line input field-->
+                                                <textarea name="consider" cols="50" maxlength="20" rows="5"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%" valign="top">Strength and weekness</td>
+                                            <td width="75%">
+                                                <!--7. Textarea : Multi line input field-->
+                                                <textarea name="strwk" cols="50" maxlength="20" rows="5"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Upload Photo </td>
+                                            <td width="75%">
+                                                <!--6. File field : File chooser-->
+                                                <input type="file" name="ffPhoto" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Upload Id Proof </td>
+                                            <td width="75%">
+                                                <!--6. File field : File chooser-->
+                                                <input type="file" name="idproof" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Upload Driving License </td>
+                                            <td width="75%">
+                                                <!--6. File field : File chooser-->
+                                                <input type="file" name="driving" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Upload Addres Proof </td>
+                                            <td width="75%">
+                                                <!--6. File field : File chooser-->
+                                                <input type="file" name="Add" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%">Upload Signature </td>
+                                            <td width="75%">
+                                                <!--6. File field : File chooser-->
+                                                <input type="hidden" name="sign" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="25%"> &nbsp; </td>
+                                            <td width="75%">
+                                                <!--8. Button to submit or reset forms-->
+                                                <input type="submit" name="btnSave" value="Save" />
+                                                <input type="reset" name="btnClear" value="Clear Data" />
+                                                <input type="button" name="btnSimple" value="Simple Button" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- form end here -->
+
+
+        <!-- copyright part start here -->
+        <tr>
+            <td align="center" height="50" bgcolor="black ">
+                <h3 style="color: red"> All rights reserved By Ankur Sanadhya. &copy; 2022 .</h3>
+
+            </td>
+        </tr>
+
+        <!-- copyright part end herer -->
+    </table>
+
+</body>
+
+</html>
